@@ -1,0 +1,67 @@
+export default function Help2HappyLanding() {
+  return (
+    <div className="bg-white text-gray-800">
+      {/* Hero Section */}
+      <section className="bg-blue-100 p-10 text-center">
+        <h1 className="text-4xl font-bold text-blue-900">Help 2 Happy – Compassionate Care for a Happier Life</h1>
+        <p className="mt-4 text-lg">Reliable, respectful, and joyful caregiving tailored to your loved one’s needs.</p>
+        <button className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-2xl shadow hover:bg-blue-700 transition">Request a Free Consultation</button>
+      </section>
+
+      {/* About Us Section */}
+      <section className="p-10 text-center">
+        <h2 className="text-3xl font-semibold mb-4">Why Choose Help 2 Happy?</h2>
+        <p className="text-lg max-w-3xl mx-auto">
+          At Help 2 Happy, we believe caregiving is more than a service—it’s a relationship built on trust, empathy, and joy. Our trained caregivers provide not just assistance, but companionship and kindness that brighten lives.
+        </p>
+      </section>
+
+      {/* Services Section */}
+      <section className="bg-gray-50 p-10">
+        <h2 className="text-3xl font-semibold text-center mb-8">Our Caregiving Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {[
+            { icon: "🏠", title: "In-Home Support" },
+            { icon: "💬", title: "Companionship" },
+            { icon: "🍽️", title: "Meal Prep & Nutrition" },
+            { icon: "💊", title: "Medication Reminders" },
+            { icon: "🧹", title: "Light Housekeeping" },
+            { icon: "🧭", title: "Custom Care Plans" },
+          ].map((service) => (
+            <div key={service.title} className="bg-white p-6 rounded-2xl shadow text-center">
+              <div className="text-4xl mb-2">{service.icon}</div>
+              <h3 className="text-xl font-semibold">{service.title}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="p-10 bg-blue-50 text-center">
+        <h2 className="text-3xl font-semibold mb-6">What Families Are Saying</h2>
+        <div className="max-w-4xl mx-auto space-y-6">
+          <blockquote className="bg-white p-6 rounded-2xl shadow">
+            “Help 2 Happy gave our family peace of mind and our mother the joy and care she truly deserves.”<br />
+            <span className="block mt-2 font-medium">— Sandra M., Client’s Daughter</span>
+          </blockquote>
+          <blockquote className="bg-white p-6 rounded-2xl shadow">
+            “Professional, kind, and always dependable. We couldn’t have asked for better care.”<br />
+            <span className="block mt-2 font-medium">— James T., Client</span>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="p-10 text-center">
+        <h2 className="text-3xl font-semibold mb-4">Ready to Talk? We're Here for You.</h2>
+        <p className="mb-6">Call us at <strong>(555) 123-4567</strong> or email <strong>care@help2happy.com</strong></p>
+        <button className="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow hover:bg-blue-700 transition">Schedule Your Free Consultation</button>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-100 text-center p-4 text-sm text-gray-600">
+        © 2025 Help 2 Happy. All rights reserved.
+      </footer>
+    </div>
+  );
+}
